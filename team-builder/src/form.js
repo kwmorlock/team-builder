@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Form = () => {
+const Form = (props) => {
   //   const [name, email, role] = (form);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -19,9 +19,9 @@ const Form = () => {
 
   return (
     <div>
-      <form>
+      <form onSubmit = {event => props.addMember(event, name, email, role)}>
         <label>
-          First Name:{" "}
+          Name:{" "}
           <input
             id="firstName"
             type="text"
@@ -31,7 +31,7 @@ const Form = () => {
         </label>
 
         <label>
-          Last Name:{" "}
+          Email:
           <input
             id="firstName"
             type="text"
@@ -41,7 +41,7 @@ const Form = () => {
         </label>
 
         <label>
-          Role:{" "}
+          Role:
           <input
             id="firstName"
             type="text"
@@ -49,6 +49,7 @@ const Form = () => {
             value={role}
           />
         </label>
+        <input type='submit'/>
       </form>
     </div>
   );

@@ -19,6 +19,13 @@ function App() {
     {name: 'christina harris', email: 'harris@email.com', role: 'Cat Lady'},    
   ]);
 
+  const addMember = (event, name, email, role) => {
+    event.preventDefault()
+    //existing = existing piece of state!!!!!
+    setTeamMembers(existing => [...existing, {name: name, email: email, role: role}])
+
+  }
+
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -42,7 +49,7 @@ function App() {
         <Member teamMember={member}/>
       ))}
     </div>
-    <Form/>
+    <Form addMember = {addMember}/>
     </>
 
 
