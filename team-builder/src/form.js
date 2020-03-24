@@ -3,16 +3,16 @@ import React from "react";
 <div>
     <form>
         <label>
-<div>First Name:{}</div>
+First Name: <input id='firstName' type=''/>
         </label>
 
         <label>
-<div>Last Name:{}</div>
+Last Name: <input id='lastName' type=''/>
         </label>
 
         <label>
-<div>Role:{}</div>
+Role: <input id='role' type=''/>
         </label>
-        
+
    </form>
 </div>
