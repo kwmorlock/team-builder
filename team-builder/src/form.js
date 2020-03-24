@@ -14,12 +14,24 @@ const Form = (props) => {
   };
 
   const changeRole = event => {
+          event.preventDefault()
     setRole(event.target.value);
   };
 
+  //toclear c
+
+  const submitForm = (event, name, email, role) => {
+
+          event.preventDefault()
+          props.addMember(name, email, role)
+          setName('')
+          setEmail('')
+          setRole('')
+  }
+
   return (
     <div>
-      <form onSubmit = {event => props.addMember(event, name, email, role)}>
+      <form onSubmit = {event => submitForm(event, name, email, role)}>
         <label>
           Name:{" "}
           <input
