@@ -1,8 +1,19 @@
 import React from "react";
 
-const Member = () => {
-    const
-}
+const Member = ({teamMembers}) => {
+    const{firstName, lastName, role} = teamMembers
+    return (
+        <>
+    <div>{firstName}</div>
+    <div>{lastName}</div>
+    <div>{role}</div>
+        </>
+    );
+};
 
 
-export default Member
+export default Member;
+
+//no need for props on line 3 by doing it this way
+//no need for .teamMembers in divs, because of line 4
+// <> and </> around div is for multiple 

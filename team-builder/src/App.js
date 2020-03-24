@@ -34,9 +34,12 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+    <div>
+      {teamMembers.map(member)}
+    </div>
 
 
   );
-}
+};
 
 export default App;
