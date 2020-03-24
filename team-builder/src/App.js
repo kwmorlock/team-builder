@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Member from "./teamMember";
-// import Form from "./Form"
+import Form from "./Form"
 
 function App() {
   // const teamMembers = [
@@ -36,11 +36,14 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+    <>
     <div>
       {teamMembers.map(member => (
         <Member teamMember={member}/>
       ))}
     </div>
+    <Form/>
+    </>
 
 
   );
