@@ -3,11 +3,9 @@ import React from "react";
 const Member = ({teamMember}) => {
     const{firstName, lastName, role} = teamMember
     return (
-        <>
-    <div>{firstName}</div>
-    <div>{lastName}</div>
-    <div>{role}</div>
-        </>
+        <div>
+    <p>{firstName} {lastName} ({role})</p>
+        </div>
     );
 };
 
