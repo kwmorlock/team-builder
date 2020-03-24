@@ -3,6 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const teamMembers = [
+
+    {firstName: 'kenzie', lastName: 'morlock', role: 'Goddess'},
+    {firstName: 'marissa', lastName: 'cooter', role: 'NonFurry'},
+    {firstName: 'zoe', lastName: 'stokes', role: 'Furry'},
+    {firstName: 'christina', lastName: 'harris', role: 'Cat Lady'},    
+  ]
   return (
     <div className="App">
       <header className="App-header">
