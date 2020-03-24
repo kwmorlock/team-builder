@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Member from "./teamMember"
 
 function App() {
   // const teamMembers = [
@@ -35,7 +36,9 @@ function App() {
     //   </header>
     // </div>
     <div>
-      {teamMembers.map(member)}
+      {teamMembers.map(member => (
+        <Member teamMember={member}/>
+      ))}
     </div>
 
 

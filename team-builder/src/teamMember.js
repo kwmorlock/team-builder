@@ -1,7 +1,7 @@
 import React from "react";
 
-const Member = ({teamMembers}) => {
-    const{firstName, lastName, role} = teamMembers
+const Member = ({teamMember}) => {
+    const{firstName, lastName, role} = teamMember
     return (
         <>
     <div>{firstName}</div>
