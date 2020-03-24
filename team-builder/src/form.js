@@ -16,3 +16,5 @@ Role: <input id='role' type=''/>
 
    </form>
 </div>
+
+export default Form;

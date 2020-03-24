@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Member from "./teamMember"
+import Member from "./teamMember";
+// import Form from "./Form"
 
 function App() {
   // const teamMembers = [
@@ -12,10 +13,10 @@ function App() {
   // ]
 
   const [teamMembers, setTeamMembers] = useState([
-    {firstName: 'kenzie', lastName: 'morlock', role: 'Goddess'},
-    {firstName: 'marissa', lastName: 'cooter', role: 'NonFurry'},
-    {firstName: 'zoe', lastName: 'stokes', role: 'Furry'},
-    {firstName: 'christina', lastName: 'harris', role: 'Cat Lady'},    
+    {name: 'kenzie morlock', email: 'morlock@email.com', role: 'Goddess'},
+    {name: 'marissa cooter', email: 'cooter@email.com', role: 'NonFurry'},
+    {name: 'zoe stokes', email: 'stokes@email.com', role: 'Furry'},
+    {name: 'christina harris', email: 'harris@email.com', role: 'Cat Lady'},    
   ]);
 
   return (
